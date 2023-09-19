@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <title>Hotel para perros</title>
 </head>
 
@@ -25,9 +30,7 @@
     </header>
     <main>
         <div class="head">
-            <div class="picture">
-                <!--              // <img src="https://res.cloudinary.com/dkc5c8vbm/image/upload/v1695141906/Apertura1_qkha4l.jpg" class="foto"> -->
-            </div>
+            <div class="picture"></div>
         </div>
         <div class="list">
             <div class="dishesh">
@@ -56,8 +59,8 @@
     <section>
         <div class="showDish">
             <div class="dishPic"><img
-                src="https://res.cloudinary.com/dkc5c8vbm/image/upload/v1695143380/comidaperro_agchl3.jpg"
-                class="adicional"></div>
+                    src="https://res.cloudinary.com/dkc5c8vbm/image/upload/v1695143380/comidaperro_agchl3.jpg"
+                    class="adicional"></div>
             <div class="detail">
                 <div class="DishName">Comida</div>
                 <div class="DishPrice">$500</div>
@@ -65,8 +68,8 @@
         </div>
         <div class="showDish">
             <div class="dishPic"><img
-                src="https://res.cloudinary.com/dkc5c8vbm/image/upload/v1695143379/remediosperro_fgm75q.jpg"
-                class="adicional"></div>
+                    src="https://res.cloudinary.com/dkc5c8vbm/image/upload/v1695143379/remediosperro_fgm75q.jpg"
+                    class="adicional"></div>
             <div class="detail">
                 <div class="DishName">Remedios</div>
                 <div class="DishPrice">$400</div>
@@ -74,14 +77,84 @@
         </div>
         <div class="showDish">
             <div class="dishPic"><img
-                src="https://res.cloudinary.com/dkc5c8vbm/image/upload/v1695143379/adiestramiento_owp3kj.avif"
-                class="adicional"></div>
+                    src="https://res.cloudinary.com/dkc5c8vbm/image/upload/v1695143379/adiestramiento_owp3kj.avif"
+                    class="adicional"></div>
             <div class="detail">
                 <div class="DishName">Adiestramiento</div>
                 <div class="DishPrice">$450</div>
             </div>
         </div>
     </section>
+    <div class="mx-auto p-2" style="width: 800px;">
+        <form>
+            <div class="mb-3" style="width: 300px;">
+                <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3" style="width: 300px;">
+                <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3" style="width: 300px;">
+                <label for="exampleInputPassword1" class="form-label">Apellido</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3" style="width: 300px;">
+                <label for="exampleInputPassword1" class="form-label">Ingrese tamaño del perro:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione:</option>
+                    <option value="1">Chico</option>
+                    <option value="2">Mediano</option>
+                    <option value="2">Grande</option>
+                </select>
+                <div class="mb-3" style="width: 300px;">
+                    <label for="exampleInputPassword1" class="form-label">Ingrese cantidad de días:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                        <option value="2">5</option>
+                        <option value="2">6</option>
+                        <option value="2">7</option>
+                        <option value="2">8</option>
+                        <option value="2">9</option>
+                        <option value="2">10</option>
+                        <option value="2">11</option>
+                        <option value="2">12</option>
+                        <option value="2">13</option>
+                        <option value="2">14</option>
+                        <option value="2">15</option>
+                        <option value="2">16</option>
+                        <option value="2">17</option>
+                        <option value="2">18</option>
+                        <option value="2">19</option>
+                        <option value="2">20</option>
+                    </select>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Comida
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Remedios
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Adiestramiento
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
     <footer>
         <div class="box">
             <h3>Instragram</h3>
